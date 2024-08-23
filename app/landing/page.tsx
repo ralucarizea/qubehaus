@@ -3,7 +3,8 @@ import Layout from "@/components/Layout";
 import Image from "next/image";
 import {Button} from "@/components/ui/button";
 import {Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious} from "@/components/ui/carousel";
-import {Card, CardContent} from "@/components/ui/card";
+import {Card, CardContent, CardTitle} from "@/components/ui/card";
+import {ArrowRight, MoveRight} from "lucide-react";
 // import {useEffect, useState} from "react";
 
 
@@ -38,7 +39,8 @@ export default function LandingPageContent() {
                     />
                 </div>
             </section>
-            <section className={`flex items-start justify-center w-[${placeholderWidth}] font-extralight text-primary pl-16 py-16 flex flex-col gap-16`}>
+            <section
+                className={`flex items-start justify-center w-[${placeholderWidth}] font-extralight text-primary pl-16 py-16 flex flex-col gap-16`}>
                 <div className=' text-[110px] tracking-[-4px]'>
                     <div>Backyard <Image
                         className='inline-block mx-2'
@@ -67,8 +69,8 @@ export default function LandingPageContent() {
                         {/*<span className='font-thin'>*/}
                         {' '}Qube
                         {/*</span><span className='font-bold'>*/}
-                            Haus.
-                    {/*</span>*/}
+                        Haus.
+                        {/*</span>*/}
                     </div>
                 </div>
                 <div className='text-[32px] tracking-[-1px]'>
@@ -80,7 +82,8 @@ export default function LandingPageContent() {
                     </div>
                 </div>
                 <div className='text-h5 mt-[-24px] text-zinc-400 tracking-[-0.5px] font-light'>
-                    Not in California? <Button variant='link' className='text-lg pl-1 font-normal'> Tell us where to build
+                    Not in California? <Button variant='link' className='text-lg pl-1 font-normal'> Tell us where to
+                    build
                     next </Button>
                 </div>
             </section>
@@ -102,13 +105,16 @@ export default function LandingPageContent() {
                             </CarouselItem>
                         ))}
                     </CarouselContent>
-                    <CarouselPrevious className='ml-16  border-none' />
+                    <CarouselPrevious className='ml-16  border-none'/>
                     <CarouselNext className='mr-16  border-none'/>
-                    <div className='flex justify-center text-h3 gap-4 items-baseline text-accent-foreground font-light tracking-[-1px] mt-3'> Backyard XL <span className='text-muted-foreground text-h5 font-light'>800 sq. ft.</span></div>
+                    <div
+                        className='flex justify-center text-h3 gap-4 items-baseline text-accent-foreground font-light tracking-[-1px] mt-3'> Backyard
+                        XL <span className='text-muted-foreground text-h5 font-light'>800 sq. ft.</span></div>
                 </Carousel>
             </section>
             <section>
-                <div className='flex flex-col w-full items-center justify-center text-[60px] text-primary my-[13%] font-extralight tracking-[-4px]'>
+                <div
+                    className='flex flex-col w-full items-center justify-center text-[60px] text-primary my-[13%] font-extralight tracking-[-4px]'>
                     <div>
                         Rent it. Divide it. Work there. Or live in it.
                     </div>
@@ -119,11 +125,22 @@ export default function LandingPageContent() {
             </section>
             <section className='flex w-full items-center justify-center gap-10 h-[65vh]'>
                 <Card className='w-2/5 h-full bg-orange-50 rounded-[16px] border-none shadow-md'>
+                    <CardTitle className='pl-8 pt-8 font-extralight flex flex-col text-h3 gap-2'> Experience QubeHaus in
+                        person. <Button variant='link'
+                                        className='p-0 text-[30px] font-light flex gap-2 items-center justify-start'> Visit a
+                            showroom <MoveRight/></Button>
+                    </CardTitle>
                     <CardContent className="">
 
                     </CardContent>
                 </Card>
                 <Card className='w-2/5 h-full bg-orange-50 rounded-[16px] border-none shadow-md'>
+                    <CardTitle className='pl-8 pt-8 font-extralight flex flex-col text-h3 gap-2'> Learn how we squeeze a
+                        whole house into your yard. <Button variant='link'
+                                                            className='p-0 text-[30px] font-light flex gap-2 items-center justify-start'> How
+                            it
+                            works <MoveRight/></Button>
+                    </CardTitle>
                     <CardContent className="">
 
                     </CardContent>
