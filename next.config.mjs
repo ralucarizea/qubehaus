@@ -10,15 +10,15 @@ const nextConfig = {
         ],
         dangerouslyAllowSVG: true,
     },
-    async redirects() {
-        return [
-            {
-                source: '/',
-                destination: '/landing',
-                permanent: true,
-            },
-        ]
-    },
+    // async redirects() {
+    //     return [
+    //         {
+    //             source: '/landing',
+    //             destination: '/',
+    //             permanent: true,
+    //         },
+    //     ]
+    // },
 };
 
 export default nextConfig;
