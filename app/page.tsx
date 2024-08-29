@@ -147,7 +147,7 @@ const LandingPage: React.FC<MyType> = () => {
                 </Card>
             </section>
             <section
-                className='flex flex-col w-full gap-24 min-h-fit justify-between h-[180vh] justify-center items-center my-28'>
+                className='flex flex-col w-full gap-12 min-h-fit justify-between h-[180vh] justify-center items-center my-28'>
                 <div className='h-1/2 w-full flex gap-5 justify-center'>
                     <Card
                         className='h-full max-w-[28%] text-[48px] font-light tracking-[-1px] leading-[56px] border-none shadow-none '>
@@ -168,9 +168,9 @@ const LandingPage: React.FC<MyType> = () => {
                                 <Separator className='w-[90%]'/>
                             </div>
                         </CardHeader>
-                        <CardContent className='w-full p-0 pt-3 flex flex-col gap-3'>
+                        <CardContent className='w-full p-0 pt-3 flex flex-col gap-5'>
                             <CardTitle className='font-extralight text-h3'> Design yours </CardTitle>
-                            <CardDescription className='font-normal text-[17px] max-w-[75%] leading-4 tracking-tight'>
+                            <CardDescription className='font-light text-[18px] max-w-[75%] leading-5 tracking-tight'>
                                 Tailor your unit with a layout and customizations that reflect your style and needs.
                             </CardDescription>
                             <div className='bg-gray-100 rounded-lg w-[450px] max-w-[80%] h-[630px]'>
@@ -188,9 +188,9 @@ const LandingPage: React.FC<MyType> = () => {
                                 <Separator className='w-[520px]'/>
                             </div>
                         </CardHeader>
-                        <CardContent className='w-full p-0 pt-3 flex flex-col gap-3'>
+                        <CardContent className='w-full p-0 pt-3 flex flex-col gap-5'>
                             <CardTitle className='font-extralight text-h3'> Sign off </CardTitle>
-                            <CardDescription className='font-normal text-[17px] max-w-[65%] leading-4 tracking-tight'>
+                            <CardDescription className='font-light text-[18px] max-w-[80%] leading-5 tracking-tight'>
                                 We visit your site to create a complete proposal for the work required to install
                                 Backyard.
                             </CardDescription>
@@ -199,7 +199,7 @@ const LandingPage: React.FC<MyType> = () => {
                     </Card>
 
                 </div>
-                <div className='h-1/2 w-full flex gap-5 justify-center'>
+                <div className='h-1/2 w-full flex gap-5 justify-center ml-[-76px]'>
                     <Card
                         className='border-none shadow-none max-w-[28%] h-full font-light tracking-[-1px] leading-[56px] max-w-[28%]'>
                         <CardHeader className='w-full p-0'>
@@ -210,9 +210,9 @@ const LandingPage: React.FC<MyType> = () => {
                                 <Separator className='w-[90%]'/>
                             </div>
                         </CardHeader>
-                        <CardContent className='w-full p-0 pt-3 flex flex-col gap-3'>
+                        <CardContent className='w-full p-0 pt-3 flex flex-col gap-5'>
                             <CardTitle className='font-extralight text-h3'> Design yours </CardTitle>
-                            <CardDescription className='font-normal text-[17px] max-w-[75%] leading-4 tracking-tight'>
+                            <CardDescription className='font-light text-[18px] max-w-[75%] leading-5 tracking-tight'>
                                 Tailor your unit with a layout and customizations that reflect your style and needs.
                             </CardDescription>
                             <div className='bg-gray-100 rounded-lg w-[450px] max-w-[80%] h-[630px]'></div>
@@ -228,9 +228,9 @@ const LandingPage: React.FC<MyType> = () => {
 
                             </div>
                         </CardHeader>
-                        <CardContent className='w-full p-0 pt-3 flex flex-col gap-3'>
+                        <CardContent className='w-full p-0 pt-3 flex flex-col gap-5'>
                             <CardTitle className='font-extralight text-h3'> Sign off </CardTitle>
-                            <CardDescription className='font-normal text-[17px] max-w-[85%] leading-4 tracking-tight'>
+                            <CardDescription className='font-light text-[18px] max-w-[85%] leading-5 tracking-tight'>
                                 We visit your site to create a complete proposal for the work required to install
                                 Backyard.
                             </CardDescription>
@@ -239,7 +239,7 @@ const LandingPage: React.FC<MyType> = () => {
                         </CardContent>
                     </Card>
                     <Card
-                        className='h-full max-w-[28%] border-none shadow-none text-[28px] font-light tracking-[-1px] leading-[32px] flex flex-col items-end pt-32'>
+                        className='h-full max-w-[28%] border-none shadow-none text-[28px] font-light tracking-[-1px] leading-[32px] flex flex-col items-start pt-40 pl-20'>
                         <div className='w-[60%]'>
                             <div className='max-w-[90%]'> Want more details?
                             </div>
