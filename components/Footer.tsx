@@ -10,13 +10,13 @@ const Footer: React.FC = () => {
     return (
         <div className="flex w-full flex-col bg-background py-32 text-[36px] gap-24 justify-between min-h-fit">
             <Accordion type="single" collapsible
-                       className="text-white w-full min-h-fit h-[130vh] bg-background text-primary text-h4 rounded-xl mb-16 grid grid-cols-4 grid-rows-2 gap-0.5 px-1">
+                       className="text-white w-full min-h-fit h-[130vh] bg-background text-primary text-h4 rounded-xl mb-32 grid grid-cols-4 grid-rows-2 gap-0.5 px-1">
                 <div className='col-span-4 bg-yellow-100 rounded-[16px] relative'>
                     <AccordionItem value="item-1"
-                                   className='absolute bottom-[30%] right-14 w-[27%] rounded-[16px] p-3 bg-yellow-600 '>
+                                   className='absolute bottom-[26%] right-14 w-[27%] rounded-[16px] p-3 bg-yellow-600 '>
                         <AccordionTrigger className='flex text-h2  p-4 '> Is it
                             accessible? </AccordionTrigger>
-                        <AccordionContent className='bg-red-400 text-h6 leading-5 p-4 font-light'>
+                        <AccordionContent className=' text-h6 leading-5 p-4 font-light'>
                             Backyard is factory assembled using our best-in-class construction system designed for the
                             long haul.
                             Mold, rot, and termite-resistant cold formed steel frame. Unfading smooth-coated insulated
@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
                                    className='absolute bottom-10 right-10  w-[48%] rounded-[16px] p-3 bg-blue-600'>
                         <AccordionTrigger className=' text-white  text-h2 p-4'> Is it
                             styled?</AccordionTrigger>
-                        <AccordionContent className='bg-red-400 text-h6 leading-5 p-4 font-light'>
+                        <AccordionContent className=' text-h6 leading-5 p-4 font-light'>
                             Yes. It comes with default styles that matches the other
                             components&apos; aesthetic. Safe and comfortable year round, even when wildfire smoke,
                             viruses,
@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
                                    className='absolute bottom-10 right-10  w-[48%] rounded-[16px] p-3 bg-orange-700 '>
                         <AccordionTrigger className=' text-white text-h2  p-4'> Is it
                             animated? </AccordionTrigger>
-                        <AccordionContent className='bg-red-400 text-h6 leading-5 p-4 font-light'>
+                        <AccordionContent className=' text-h6 leading-5 p-4 font-light'>
                             Yes. Its animated by default, but you can disable it if you
                             prefer. Save on energy costs every month and even offset the power consumption of your main
                             home. Yes. Its animated by default, but you can disable it if you
