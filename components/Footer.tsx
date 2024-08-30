@@ -10,9 +10,7 @@ const Footer: React.FC = () => {
     return (
         <div
             className="flex w-full flex-col bg-background py-32 text-[36px] gap-24 justify-between min-h-fit relative">
-            {/*<div*/}
-            {/*    className='bg-background p-10 text-[200px] text-primary absolute z-50 top-24 left-[-16px] rounded-[80px] font-light'>FAQ*/}
-            {/*</div>*/}
+
             <Accordion type="single" collapsible
                        className="text-white w-full min-h-fit h-[130vh] bg-background text-primary text-h4 rounded-xl mb-32 grid grid-cols-4 grid-rows-2 gap-0.5 px-1">
                 <div className='col-span-4 bg-yellow-100 rounded-[16px] relative bg-no-repeat bg-cover bg-bottom'

@@ -3,9 +3,7 @@ import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu"
 import { cva } from "class-variance-authority"
 import { ChevronDown } from "lucide-react"
 
-// import { cn } from "@/lib/utils"
 
-// Updated cn function to handle undefined values
 function cn(...classes: (string | undefined)[]) {
     return classes.filter(Boolean).join(' ');
 }

@@ -14,11 +14,11 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({
-                                       className = "", // Default className to an empty string
+                                       className = generalFont.className,
                                        children,
                                    }: {
     children: React.ReactNode
-    className?: string // className is optional and defaults to a string
+    className?: string
 }) {
     return (
         <html lang="en">
