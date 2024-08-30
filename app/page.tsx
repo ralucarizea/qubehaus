@@ -6,14 +6,14 @@ import {Separator} from "@/components/ui/separator";
 import React, {ReactNode} from "react";
 
 const placeholderWidth = '1651';
-const placeholderHeight = '900';
+// const placeholderHeight = '900';
 
 
 interface LandingPageProps {
     children: ReactNode;
 }
 
-type MyType = Omit<LandingPageProps, "children">; // Example to omit children
+type MyType = Omit<LandingPageProps, "children">;
 
 const carouselItems: { index: string; bgImagePath: string; description: string }[] = [
     {index: '0', bgImagePath: '/carousel-houses-min.jpg', description: 'hahaha'},
