@@ -3,7 +3,7 @@
 import * as React from "react"
 import Link from "next/link"
 
-import { cn } from "@/lib/utils"
+import {cn} from "@/lib/utils"
 // import { Icons } from "@/components/icons"
 import {
     NavigationMenu,
@@ -53,13 +53,14 @@ const components: { title: string; href: string; description: string }[] = [
     },
 ]
 
+
 export function Navbar() {
     return (
-        <NavigationMenu className='text-primary rounded-lg'>
-            <NavigationMenuList className='bg-muted/90 p-0.5 rounded-lg text-h3 '>
-                <NavigationMenuItem className='p-1 h-fit flex items-center'>
-                    <NavigationMenuTrigger className='text-[15px]'>Despre containere</NavigationMenuTrigger>
-                    <NavigationMenuContent className=''>
+        <NavigationMenu className="text-primary rounded-lg bg-gradient-to-r from-white/40 via-white/40 to-white/40 transition duration-500 backdrop-blur-[2px] ">
+            <NavigationMenuList className="bg-transparent/5 p-0.5 rounded-lg text-h3 ">
+                <NavigationMenuItem className="p-1 h-fit flex items-center ">
+                    <NavigationMenuTrigger className="text-[15px] bg-transparent">Despre containere</NavigationMenuTrigger>
+                    <NavigationMenuContent>
                         <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] transition">
                             <li className="row-span-3">
                                 <NavigationMenuLink asChild>
@@ -67,7 +68,6 @@ export function Navbar() {
                                         className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-background to-muted/50 p-6 no-underline outline-none focus:shadow-md"
                                         href="/"
                                     >
-                                        {/*<Icons.logo className="h-6 w-6" />*/}
                                         <div className="mb-2 mt-4 text-lg font-medium">
                                             shadcn/ui
                                         </div>
@@ -91,10 +91,10 @@ export function Navbar() {
                         </ul>
                     </NavigationMenuContent>
                 </NavigationMenuItem>
-                <NavigationMenuItem className='p-1 h-fit flex items-center'>
-                    <NavigationMenuTrigger className='text-[15px]'>Modele</NavigationMenuTrigger>
+                <NavigationMenuItem className="p-1 h-fit flex items-center">
+                    <NavigationMenuTrigger className="bg-transparent text-[15px]">Modele</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                        <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                        <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                             {components.map((component) => (
                                 <ListItem
                                     key={component.title}
@@ -107,13 +107,14 @@ export function Navbar() {
                         </ul>
                     </NavigationMenuContent>
                 </NavigationMenuItem>
-                <NavigationMenuItem className='p-1 h-fit flex items-center'>
+                <NavigationMenuItem className="p-1 h-fit flex items-center bg-transparent">
                     <Link href="/docs" legacyBehavior passHref>
-                        <NavigationMenuLink className={navigationMenuTriggerStyle() }>
+                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                             Cum funcționează
                         </NavigationMenuLink>
                     </Link>
-                </NavigationMenuItem> <NavigationMenuItem className='p-1 h-fit flex items-center'>
+                </NavigationMenuItem>
+                <NavigationMenuItem className="p-1 h-fit flex items-center bg-transparent">
                     <Link href="/finantare" legacyBehavior passHref>
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                             Planuri de finanțare
@@ -125,10 +126,8 @@ export function Navbar() {
     )
 }
 
-const ListItem = React.forwardRef<
-    React.ElementRef<"a">,
-    React.ComponentPropsWithoutRef<"a">
-    >(({ className, title, children, ...props }, ref) => {
+const ListItem = React.forwardRef<React.ElementRef<"a">,
+    React.ComponentPropsWithoutRef<"a">>(({ className = " ", title, children, ...props }, ref) => {  // Default className to an empty string
     return (
         <li>
             <NavigationMenuLink asChild>
@@ -136,7 +135,7 @@ const ListItem = React.forwardRef<
                     ref={ref}
                     className={cn(
                         "block select-none space-y-1 rounded-lg p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-                        className
+                        className ?? ""
                     )}
                     {...props}
                 >
@@ -149,4 +148,5 @@ const ListItem = React.forwardRef<
         </li>
     )
 })
+// ListItem.displayName = "ListItem"
 ListItem.displayName = "ListItem"
