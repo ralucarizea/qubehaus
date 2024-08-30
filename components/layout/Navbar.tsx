@@ -55,12 +55,12 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function Navbar() {
     return (
-        <NavigationMenu className='text-primary rounded-md'>
-            <NavigationMenuList className='bg-muted/80 p-1 rounded-lg text-h3'>
+        <NavigationMenu className='text-primary rounded-lg'>
+            <NavigationMenuList className='bg-muted/90 p-0.5 rounded-lg text-h3 '>
                 <NavigationMenuItem className='p-1 h-fit flex items-center'>
                     <NavigationMenuTrigger className='text-[15px]'>Despre containere</NavigationMenuTrigger>
                     <NavigationMenuContent className=''>
-                        <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] ">
+                        <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] transition">
                             <li className="row-span-3">
                                 <NavigationMenuLink asChild>
                                     <a
@@ -135,7 +135,7 @@ const ListItem = React.forwardRef<
                 <a
                     ref={ref}
                     className={cn(
-                        "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+                        "block select-none space-y-1 rounded-lg p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
                         className
                     )}
                     {...props}

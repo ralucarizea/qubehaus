@@ -8,12 +8,17 @@ import {AccordionContent, AccordionItem, AccordionTrigger} from "@/components/ui
 
 const Footer: React.FC = () => {
     return (
-        <div className="flex w-full flex-col bg-background py-32 text-[36px] gap-24 justify-between min-h-fit">
+        <div
+            className="flex w-full flex-col bg-background py-32 text-[36px] gap-24 justify-between min-h-fit relative">
+            {/*<div*/}
+            {/*    className='bg-background p-10 text-[200px] text-primary absolute z-50 top-24 left-[-16px] rounded-[80px] font-light'>FAQ*/}
+            {/*</div>*/}
             <Accordion type="single" collapsible
                        className="text-white w-full min-h-fit h-[130vh] bg-background text-primary text-h4 rounded-xl mb-32 grid grid-cols-4 grid-rows-2 gap-0.5 px-1">
-                <div className='col-span-4 bg-yellow-100 rounded-[16px] relative'>
+                <div className='col-span-4 bg-yellow-100 rounded-[16px] relative bg-no-repeat bg-cover bg-bottom'
+                     style={{backgroundImage: `url('/faq-daisies.jpg')`}}>
                     <AccordionItem value="item-1"
-                                   className='absolute bottom-[26%] right-14 w-[27%] rounded-[16px] p-3 bg-yellow-600 '>
+                                   className='absolute bottom-[26%] right-14 w-[27%] rounded-[16px] p-3 bg-yellow-500  border-none'>
                         <AccordionTrigger className='flex text-h2  p-4 '> Is it
                             accessible? </AccordionTrigger>
                         <AccordionContent className=' text-h6 leading-5 p-4 font-light'>
@@ -24,9 +29,10 @@ const Footer: React.FC = () => {
                         </AccordionContent>
                     </AccordionItem>
                 </div>
-                <div className='col-span-2 bg-blue-100 rounded-[16px] relative'>
+                <div className='col-span-2 bg-blue-100 rounded-[16px] relative bg-no-repeat bg-cover bg-bottom'
+                     style={{backgroundImage: `url('/faq-solarpanel.jpg')`}}>
                     <AccordionItem value="item-2"
-                                   className='absolute bottom-10 right-10  w-[48%] rounded-[16px] p-3 bg-blue-600'>
+                                   className='absolute bottom-10 right-10  w-[48%] rounded-[16px] p-3 bg-blue-600  border-none'>
                         <AccordionTrigger className=' text-white  text-h2 p-4'> Is it
                             styled?</AccordionTrigger>
                         <AccordionContent className=' text-h6 leading-5 p-4 font-light'>
@@ -37,9 +43,10 @@ const Footer: React.FC = () => {
                         </AccordionContent>
                     </AccordionItem>
                 </div>
-                <div className='col-span-2  bg-orange-100 rounded-[16px] relative'>
+                <div className='col-span-2  bg-orange-100 rounded-[16px] relative bg-no-repeat bg-cover bg-bottom'
+                     style={{backgroundImage: `url('/faq-woodmaterial.jpg')`}}>
                     <AccordionItem value="item-3"
-                                   className='absolute bottom-10 right-10  w-[48%] rounded-[16px] p-3 bg-orange-700 '>
+                                   className='absolute bottom-10 right-10  w-[48%] rounded-[16px] p-3 bg-orange-500  border-none'>
                         <AccordionTrigger className=' text-white text-h2  p-4'> Is it
                             animated? </AccordionTrigger>
                         <AccordionContent className=' text-h6 leading-5 p-4 font-light'>
@@ -143,10 +150,10 @@ const Footer: React.FC = () => {
                 </div>
                 <div className='flex flex-col gap-2 w-1/3 pt-6 pb-24 text-primary '>
                     <span className='text-h6 '>Have questions?</span>
-                    <Button className='text-h6 my-2 py-6' variant='secondary'> Contact us</Button>
+                    <Button className='text-h6 my-2 py-6 bg-orange-100' variant='secondary'> Contact us</Button>
                     <span className='text-h6'>Get updates </span>
                     <span className='text-h6'>Drop us your email to learn whats next </span>
-                    <Button variant='secondary' className='text-h6 py-6 my-2'> Contact us</Button>
+                    <Button variant='secondary' className='text-h6 py-6 my-2 bg-orange-100'> Contact us</Button>
                 </div>
             </div>
 

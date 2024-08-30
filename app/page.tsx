@@ -22,7 +22,7 @@ const LandingPage: React.FC<MyType> = () => {
         <div className='bg-background'>
             <section className='flex flex-col justify-center items-center w-full text-primary '>
                 <div
-                    className='flex items-center justify-center w-full text-[350px] font-extralight tracking-[-28px] relative mr-16'>
+                    className='flex items-center justify-center w-full text-[350px] font-extralight tracking-[-32px] relative mr-16'>
                     XL10
                 </div>
                 <div className='text-[34px] font-light flex flex-col items-end absolute left-[13%] top-[33%]'>
