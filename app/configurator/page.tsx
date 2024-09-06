@@ -81,7 +81,7 @@ const Configurator = () => {
                   )}
                 </div>
                 <OptionsItem
-                  label={`Choose your ${key}`}
+                  label={`Alege-ti ${key}`}
                   type="radio"
                   className={opacityClass}
                   options={value.map((item) => ({

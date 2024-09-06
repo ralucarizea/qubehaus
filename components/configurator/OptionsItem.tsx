@@ -79,7 +79,7 @@ const OptionsItem: React.FC<OptionsItemProps> = ({
                 value={option.value}
                 checked={selectedValue === option.value}
                 onChange={() => onChange(option.value)}
-                className="absolute opacity-0 peer"
+                className="absolute opacity-0 peer w-fit"
               />
             </label>
           ))}

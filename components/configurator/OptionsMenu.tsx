@@ -41,7 +41,7 @@ const OptionsMenu: React.FC<OptionsMenuProps> = ({
         {Object.entries(AVAIlABLE_OPTIONS).map(([key, value]) => (
           <OptionsItem
             key={key}
-            label={`Choose your ${key}`}
+            label={`Alege-ti ${key}`}
             type={"radio"}
             options={value.map((item) => ({
               label: item.label,
