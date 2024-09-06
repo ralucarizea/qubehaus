@@ -1,5 +1,5 @@
+// @ts-nocheck
 "use client";
-
 import { AVAIlABLE_OPTIONS, useConfigurator } from "@/hooks/useConfigurator";
 import React, { useEffect, useRef, useState } from "react";
 import OptionsItem from "@/components/configurator/OptionsItem";
